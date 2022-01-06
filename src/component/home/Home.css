@@ -1,0 +1,35 @@
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+.test-body{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding:2%;
+}
+.DatePicker{
+    width: 55%;
+    color: white;
+    height: auto;
+    box-shadow: 1px 1px 3px darkslategrey;
+    border-radius: 10px!important;
+    margin: 0 auto;
+    background-color: white;
+}
+.DateField{
+    border:none !important;
+    font-size:2rem !important;
+    font-weight: 300 !important;
+}
+.all-test{
+    padding-bottom: 20%;
+}
+@media (max-width:480px){
+    .DateField{
+    border:none !important;
+    font-size:1rem !important;
+    font-weight: 100 !important;
+    }
+    .DatePicker{
+        width:70%;
+
+    }
+}

@@ -1,0 +1,199 @@
+.each_question_heading{
+    width:100%;
+    height:70px;
+    display:flex;
+    justify-content: space-around;
+}
+.submit_button,.timmer{
+    width:150px;
+    height:60px;
+    border-radius:10px;
+    box-shadow:0px 0px 2px grey;
+    color:white;
+    padding:10px;
+    font-size:20px;
+    margin:10px;
+    border:none !important;
+    cursor:pointer;
+}
+.submit_button:hover{
+    background-color: white;
+    color:#0d6efd;
+}
+.timmer{
+    background-color:white;
+    font-size: 30px;
+    padding:10px 17px;
+    color:#dc3545;
+    box-shadow: 0px 0px 2px #dc3545;
+}
+.clear_response{
+    width:150px;
+    font-size:18px;
+    padding:5px;
+    height:30px;
+    color:white;
+    box-shadow:0px 0px 1px grey;
+    margin:40px;
+    border: none !important;
+    background-color: #6c757d;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.clear_response:hover{
+    background-color:white ;
+    color:#6c757d;
+}
+.submit_button{
+    background-color: #0d6efd;
+}
+.submit_button_box{
+    width:200px;
+    height:60px;
+}
+.main_contnet{
+    width:96%;
+    margin:10px 2%;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;  
+    height:auto;
+    min-height:86vh;
+}
+.question_number{
+    width:50px;
+    height:50px;
+    border-radius: 50% 50%;
+    box-shadow: 0px 0px 0px 2px white;
+    background: linear-gradient(45deg,blue,violet);
+    color:white;
+    cursor: pointer;
+}
+/* The container */
+.option_container{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.option_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.option_container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.option_container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.option_container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.option_container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+.question_image{
+  width:280px;
+  height:300px;
+}
+.option_image{
+  width:150px;
+  height: 150px;
+}
+.active{
+  position:fixed;
+  top:10;
+  left:0;
+  height:auto;
+  width:auto;
+  z-index: 3000;
+  cursor:zoom-out;
+  cursor:-moz-zoom-out;
+}
+@media (min-width:600px){
+  .each_question_heading{
+    justify-content: space-around;
+  }
+    .submit_button,.timmer{
+        width:100px;
+        height:50px;
+        border-radius:5px;
+        box-shadow:0px 0px 1px grey;
+        font-size:16px !important;
+        
+    }
+    .clear_response{
+        width:100px;
+        height:30px;
+        border-radius:5px;
+        box-shadow:0px 0px 1px grey;
+        font-size:12px  !important;
+        margin:25px;
+    }
+  }
+  @media (max-width:480px){
+    .each_question_heading{
+      justify-content: space-between;
+    }
+    .submit_button,.timmer{
+        width:80px;
+        height:40px;
+        border-radius:4px;
+        font-size:16px !important;
+        padding:10px;
+    }
+    .clear_response{
+        width:80px;
+        height:25px;
+        border-radius:4px;
+        box-shadow:0px 0px 1px grey;
+        font-size:10px  !important;
+        margin:20px;
+    }
+  }
+  @media (max-width:315px){
+    .question_section{
+         width:100% !important;
+         margin: 0 !important;
+    }
+  }
