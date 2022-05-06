@@ -57,7 +57,7 @@ function Question_section(props){
         <div className="main_contnet">
         <div className="question_section">
                     <Text text={question.question}style={{"margin":`${5}px`}}/>
-                {question.question_image===undefined?'':<Image src={`%PUBLIC_URL%/Images/${question.question_image}`}
+                {question.question_image===undefined?'':<Image src={`${process.env.PUBLIC_URL}/Images/${question.question_image}`}
                  style={{"box-shadow":`${0}px ${0}px ${2}px grey`,"borderRadius":`${5}px`,"marginTop":`${5}px`}}
                  className='question_image'/>}
         </div>
@@ -67,7 +67,7 @@ function Question_section(props){
                            return ( <label className='option_container'>
                                 <Text text={option.text}/>   
                                     { option.image===undefined?'':
-                                     <Image src={`%PUBLIC_URL%/Images/${option.image}`}
+                                     <Image src={`${process.env.PUBLIC_URL}/Images/${option.image}`}
                                      className='option_image'
                                       style={{"box-shadow":`${0}px ${0}px ${1}px grey`,"borderRadius":`${2}px`}}/>}
                                 <input type="radio" onChange={(e)=>{getOptionValue(e)}} name="radio" data-option={index+1}/>

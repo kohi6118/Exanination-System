@@ -13,6 +13,8 @@ const Home = () => {
   const end_date1=new Date(Date.parse(date)+3600000);
   const start_date2=new Date(Date.parse(date)+7200000);
   const end_date2=new Date(Date.parse(date)+10800000);
+  const start_date3=new Date(Date.parse(date)-3600000);
+  const end_date3=new Date(Date.parse(date)-7200000);
   const data={
     test:
       [
@@ -35,8 +37,8 @@ const Home = () => {
         {
           testId:390,
           testName:"test3",
-          timmingStart:"2021-12-12T12:00:00",
-          timingEnd:"2021-12-12T12:50:00",
+          timmingStart:start_date3,
+          timingEnd:end_date3,
           marks:"30",
           numberOfQuestion:30
         },

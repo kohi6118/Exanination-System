@@ -60,7 +60,7 @@ const AnswerKey = () => {
     }
     const handleDownload=(name,testId)=>{
         let url_part=createUrl(name,testId);
-         window.open(`http://localhost:3000/${url_part}`);
+         window.open(`${process.env.PUBLIC_URL}/${url_part}`);
     }
     return (
         <div className="answerkey"> 

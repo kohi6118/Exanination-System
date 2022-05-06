@@ -50,7 +50,7 @@ function PDFView() {
     </nav>
    <div className='pdf-container'>
    <Document 
-     file={`https://kohi6118.github.io/pdf/${id}`}
+     file={`${process.env.PUBLIC_URL}/pdf/${id}`}
      className='pdf-viewer'
      onLoadSuccess={onDocumentLoadSuccess}
      loading='Loading PDF…'

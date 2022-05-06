@@ -163,18 +163,18 @@ const review = () => {
                     <div className={`review_main_section_body ${status}`} key={value.questionId}>
                         <div className='review_main_section_body_question'>
                         <Text text={value.question}/>
-                          {value.question_image===undefined?'':<Image src={`http://localhost:3000/Images/${value.question_image}`}
+                          {value.question_image===undefined?'':<Image src={`${process.env.PUBLIC_URL}/Images/${value.question_image}`}
                            style={{"width":`${200}px`,"height":`${200}px`}}/>}
                         </div>
                         <div className='review_main_section_option'>
                             <div className='your_choice'>
                             {value.your_remark===undefined?"":<Text text={value.your_answer_text}/>}
-                                {value.your_answer_image===undefined?'':<Image src={`http://localhost:3000/Images/${value.your_answer_image}`}
+                                {value.your_answer_image===undefined?'':<Image src={`${process.env.PUBLIC_URL}/Images/${value.your_answer_image}`}
                                 style={{"width":`${150}px`,"height":`${150}px`}}/>}
                             </div>
                             <div className='right_answer'>
                                 <Text text={value.correct_answer_text}/>
-                                {value.correct_answer_image===undefined?'':<Image src={`http://localhost:3000/Images/${value.correct_answer_image}`}
+                                {value.correct_answer_image===undefined?'':<Image src={`${process.env.PUBLIC_URL}/Images/${value.correct_answer_image}`}
                                 style={{"width":`${150}px`,"height":`${150}px`}}/>}
                             </div>
                         </div>
