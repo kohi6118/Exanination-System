@@ -18,7 +18,7 @@
     text-align: center;
 }
 .header{
-    width: 100vw;
+    width: 90vw;
     height:70px;
 }
 .timing_left{
@@ -77,6 +77,4 @@
     right:30px;
 
   }
-
-
 }

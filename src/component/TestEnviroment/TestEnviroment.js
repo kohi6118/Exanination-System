@@ -9,25 +9,25 @@ const TestEnviroment = () => {
     const data1=[{
         test_name:"test1",
         testId:456,
-        Timming:250,
+        Timming:25000,
         question:[
-            {   question_time:10,
+            {   question_time:1000,
                 question_id:561,
                 question:"which app do you like to fit here",
-                question_image:"561.JPEG",
+                question_image:"561.jpeg",
                 option:[{text:"google meet",image:"561O1.png"},{text:"microsoft team",image:"561O2.png"},{text:"amazon"},{text:"adobe"}]
             },
             {
-            question_time:10,
+            question_time:1000,
             question_id:568,
             question:"what do you  have now",
-            question_image:"568.JPEG",
+            question_image:"568.jpeg",
             option:[{text:"cctv",image:"568O1.png"},{text:"pen",image:"568O2.png"},{text:"brush",image:"568O3.png"},{text:"hammer",image:"568O4.png"}]
             },
-            {   question_time:10,
+            {   question_time:1000,
                 question_id:570,
                 question:"what he is doing",
-                question_image:"570.JPEG",
+                question_image:"570.jpeg",
                 option:[{text:"siting"},{text:"dancing"},{text:"claping"},{text:"reading"}]
             }        
         ]
