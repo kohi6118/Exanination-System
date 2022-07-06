@@ -145,7 +145,7 @@ const review = () => {
              </div>
          </div>
          <div className='label-box'>
-      <div style={{'color':"#0088FE"}} >
+      <div style={{'color':"green"}} >
         right
       </div>
       <div style={{'color':"#00C49F"}} >
@@ -186,5 +186,4 @@ const review = () => {
         </div>
     )
 }
-
 export default review
